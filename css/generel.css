@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid_billeder {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid_billeder {
+  margin: 2rem;
+}
