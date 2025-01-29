@@ -4,14 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Diphylleia&family=Ga+Maamli&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montaga&family=Onest:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+13px&family=Slabo+27px&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Diphylleia&family=Ga+Maamli&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montaga&family=Onest:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+13px&family=Slabo+27px&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Produkt</title>
   </head>
+  <header>
+    <div class="logo">
+      <h1>FashionRUs</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="produktliste.html">Produktliste</a></li>
+        <li><a href="produkt.html">Produkt</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
 
   <body>
-    <main></main>
-    <footer></footer>
+    <main class="produkt_container">
+      <div class="produkt_billede">
+        <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="billede af t-shirt" />
+      </div>
+
+      <div class="produkt_info">
+        <h2>Produkt Information</h2>
+        <p><strong>Model name</strong><br />Sahara Team India Fanwear Round Neck Jersey</p>
+        <p><strong>Color</strong><br />Blue</p>
+        <p><strong>Invertory number</strong><br />1163</p>
+      </div>
+
+      <div class="produkt_purchase">
+        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+        <p>Nike | Tshirts</p>
+        <label for="size">Choose a size</label>
+        <select id="size">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+        <button class="add-to-basket">Add to basket</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <h1>FashionRUs</h1>
+      <div class="ikoner">
+        <a href="https://www.facebook.com/"><img src="billeder/facebook.png" alt="facebook" /> </a>
+        <a href="https://www.instagram.com/"><img src="billeder/instagram.png" alt="instagram" /> </a>
+        <a href="https://www.tiktok.com/"><img src="billeder/tiktok.png" alt="tiktok" /></a>
+      </div>
+    </footer>
     <script src="javascript.js"></script>
   </body>
 </html>

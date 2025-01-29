@@ -14,14 +14,12 @@ img {
     display: flex;
     align-items: center;
   }
-
   .menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
   .menu li {
     margin-right: 20px;
   }
@@ -30,16 +28,155 @@ img {
     margin-right: 0;
   }
 
-  .category_list_container {
-    display: grid;
-    grid-template-columns: 1fr;
+  .menu {
+    display: none;
   }
+  .burger {
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    background-color: white;
+  }
+
+  .burger .line {
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: block;
+  }
+
+  .burger:hover {
+    transform: scale(1.3);
+  }
+  .menu.active {
+    display: flex;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 205px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
   .grid_billeder {
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 10rem;
+  }
+  .billede_1 {
+    width: 100%;
+    margin-left: -8rem;
+    margin-top: 2rem;
+  }
+
+  .billede_2 {
+    width: 100%;
+    margin-left: -8rem;
+    margin-top: 1rem;
+  }
+
+  .billede_3 {
+    width: 100%;
+    margin-left: -8rem;
+    margin-top: 1rem;
+  }
+
+  .billede_4 {
+    width: 100%;
+    margin-left: -8rem;
+    margin-top: 1rem;
+  }
+
+  .produkt_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .produkt_billede {
+    margin-left: 2rem;
+  }
+  .produkt_info {
+    margin-top: 1rem;
+  }
+  .produkt_purchase {
+    text-align: center;
+    margin-top: 1rem;
   }
 }
 
-.grid_billeder {
-  margin: 2rem;
+@media (min-width: 900px) {
+  .grid_billeder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .billede_1 {
+    width: 330px;
+    margin-left: -1rem;
+    margin-top: 4rem;
+  }
+
+  .billede_2 {
+    width: 345px;
+    margin-left: -1.5rem;
+    margin-top: 4rem;
+  }
+
+  .billede_3 {
+    width: 345px;
+    margin-left: -1rem;
+    margin-top: 4rem;
+  }
+
+  .billede_4 {
+    margin-top: 4rem;
+    width: 360px;
+    margin-left: -0.5rem;
+  }
+
+  .produkt_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  .produkt_info {
+    margin-top: 4rem;
+  }
+  .produkt_purchase {
+    margin-top: 4rem;
+    margin-right: 2rem;
+  }
 }

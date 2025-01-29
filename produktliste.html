@@ -4,21 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Diphylleia&family=Ga+Maamli&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montaga&family=Onest:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+13px&family=Slabo+27px&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Diphylleia&family=Ga+Maamli&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montaga&family=Onest:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+13px&family=Slabo+27px&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Produktliste</title>
   </head>
+  <header>
+    <div class="logo">
+      <h1>FashionRUs</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="produktliste.html">Produktliste</a></li>
+        <li><a href="produkt.html">Produkt</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
 
   <body>
-    <main>
-      <div class="grid_billeder">
-        <div class="billede_1"><img src="billeder/1163.webp" alt="billede 1" /><a href="produkt.html"></a></div>
-        <div class="billede_2"><img src="billeder/1165.webp" alt="billede 2" /><a href="produkt.html"></a></div>
-        <div class="billede_3"><img src="billeder/1525.webp" alt="billede 3" /><a href="produkt.html"></a></div>
-        <div class="billede_4"><img src="billeder/1528.webp" alt="billede 4" /><a href="produkt.html"></a></div>
+    <main class="grid_billeder">
+      <div class="billede_1">
+        <a href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="billede 1" /></a>
+        <h4>Sahara Team India Fanwear Round Neck Jersey</h4>
+        <p>Tshirts | Nike</p>
+        <p>DKK 895,-</p>
+      </div>
+      <div class="billede_2">
+        <a href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="billede 2" /></a>
+        <h4>Mean Team India Cricket Jersey</h4>
+        <p>Tshirts | Nike</p>
+        <p>DKK 2495,-</p>
+      </div>
+      <div class="billede_3">
+        <a href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="billede 3" /></a>
+        <h4>Deck Navy Blue Backpack</h4>
+        <p>Backpacks | Puma</p>
+        <p>DKK 1299,-</p>
+      </div>
+
+      <div class="billede_4">
+        <a href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp" alt="billede 4" /></a>
+        <h4>Balck Fleece Jacket</h4>
+        <p>Jackets | Puma</p>
+        <p>DKK 3999,-</p>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <h1>FashionRUs</h1>
+      <div class="ikoner">
+        <a href="https://www.facebook.com/"><img src="billeder/facebook.png" alt="facebook" /> </a>
+        <a href="https://www.instagram.com/"><img src="billeder/instagram.png" alt="instagram" /> </a>
+        <a href="https://www.tiktok.com/"><img src="billeder/tiktok.png" alt="tiktok" /></a>
+      </div>
+    </footer>
     <script src="javascript.js"></script>
   </body>
 </html>
