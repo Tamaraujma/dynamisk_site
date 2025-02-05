@@ -320,6 +320,12 @@ footer h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.produkt_p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 .produkt_purchase h3 {
   font-family: "Archivo Black";
   margin-bottom: 10px;
@@ -358,4 +364,37 @@ footer h1 {
 
 .add-to-basket:hover {
   background-color: #0056b3;
+}
+
+.udsolgt {
+  position: relative;
+  visibility: hidden;
+  color: black;
+  width: 85 spx;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px; /* Rundede hjørner */
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tilbud {
+  position: relative;
+  visibility: hidden;
+  background-color: grey;
+  width: 60px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.isOnSale {
+  visibility: visible;
+  font-size: 50px;
+}
+
+.soldOut {
+  visibility: visible;
 }
