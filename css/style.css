@@ -215,6 +215,19 @@ footer h1 {
   font-size: 20px;
 }
 
+.billede_1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.billede_1 a:hover {
+  color: grey;
+}
+
+.billede_1 h4:hover {
+  transform: scale(1.04);
+}
+
 .billede_1 p {
   margin-left: 1rem;
   margin-top: 10px;
@@ -320,6 +333,12 @@ footer h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.produkt_p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 .produkt_purchase h3 {
   font-family: "Archivo Black";
   margin-bottom: 10px;
@@ -358,4 +377,36 @@ footer h1 {
 
 .add-to-basket:hover {
   background-color: #0056b3;
+}
+
+.udsolgt {
+  position: relative;
+  visibility: hidden;
+  color: black;
+  width: 85px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 1px; /* Rundede hjørner */
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tilbud {
+  position: relative;
+  visibility: hidden;
+  background-color: grey;
+  width: 60px;
+  padding: 5px 10px;
+  border-radius: 1px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.isOnSale {
+  visibility: visible;
+}
+
+.soldOut {
+  visibility: visible;
 }

@@ -92,7 +92,7 @@ img {
     font-size: 24px;
   }
 
-  .grid_billeder {
+  #liste {
     display: grid;
     grid-template-columns: 1fr;
     margin-left: 10rem;
@@ -121,7 +121,7 @@ img {
     margin-top: 1rem;
   }
 
-  .produkt_container {
+  #produkt_container {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -135,12 +135,15 @@ img {
     text-align: center;
     margin-top: 1rem;
   }
+  .tilbud {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 900px) {
-  .grid_billeder {
+  #liste {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .billede_1 {
     width: 330px;
@@ -166,7 +169,7 @@ img {
     margin-left: -0.5rem;
   }
 
-  .produkt_container {
+  #produkt_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -178,5 +181,13 @@ img {
   .produkt_purchase {
     margin-top: 4rem;
     margin-right: 2rem;
+  }
+
+  .udsolgt {
+    margin-top: 10px;
+  }
+
+  .tilbud {
+    margin-top: 1rem;
   }
 }
