@@ -215,6 +215,19 @@ footer h1 {
   font-size: 20px;
 }
 
+.billede_1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.billede_1 a:hover {
+  color: grey;
+}
+
+.billede_1 h4:hover {
+  transform: scale(1.04);
+}
+
 .billede_1 p {
   margin-left: 1rem;
   margin-top: 10px;
@@ -370,11 +383,11 @@ footer h1 {
   position: relative;
   visibility: hidden;
   color: black;
-  width: 85 spx;
+  width: 85px;
   background-color: red;
   color: white;
   padding: 5px 10px;
-  border-radius: 3px; /* Rundede hjørner */
+  border-radius: 1px; /* Rundede hjørner */
   font-size: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -385,14 +398,13 @@ footer h1 {
   background-color: grey;
   width: 60px;
   padding: 5px 10px;
-  border-radius: 3px;
+  border-radius: 1px;
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .isOnSale {
   visibility: visible;
-  font-size: 50px;
 }
 
 .soldOut {
